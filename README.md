@@ -1,13 +1,9 @@
 # Shakya-online-GEOG676-spring2025
 GEOG 676 - GIS Programming
 
-| LABS    |
-|:-------:|
-|[Lab_1] (Lab_1/README.md)|
-|[Lab_2] (Lab_2/README.md)|
-|[Lab_3] (Lab_3/README.md)|
-|[Lab_4] (Lab_4/README.md)|
-|[Lab_5] (Lab_5/README.md)|
-|[Lab_6] (Lab_6/README.md)|
-|[Lab_7] (Lab_7/README.md)|
-|[Lab_8] (Lab_8/README.md)|
+| Lab Number | Assignment Name | Link |
+| ---------- | --------------- | ---- |
+| Lab 1 | Introduction to Git | [View Lab 1](/labs/lab1.md) |
+| Lab 2 | Data Structures | [View Lab 2](/labs/lab2.md) |
+| Lab 3 | Algorithms | [View Lab 3](/labs/lab3.md) |
+| Lab 4 | Database Design | [View Lab 4](/labs/lab4.md) |
