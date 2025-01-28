@@ -44,7 +44,7 @@ class Triangle(Shape):
 shape_objects = []
 for shape_name, dimensions in shapes:
     if shape_name == "Rectangle":
-        shape = Rectangle(*dimensions)  # Unpack dimensions as arguments
+        shape = Rectangle(*dimensions)  # Unpack dimensions as arguments for __init__ method of each class
     elif shape_name == "Circle":
         shape = Circle(*dimensions)
     elif shape_name == "Triangle":
