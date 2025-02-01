@@ -1,22 +1,11 @@
-#Read data from the text file
-with open(r'C:\Users\shaky\OneDrive - Texas A&M University\Documents\GitHub\Shakya-online-GEOG676-spring2025\Lab_3\shape.txt', 'r') as file:
-    shapes_data = file.readlines()
-
-#Parse data for iteration later in process
-shapes = []
-for line in shapes_data:
-    parts = line.strip().split(",")
-    shape_name = parts[0]
-    dimensions = list(map(float, parts[1:]))  # Convert dimensions to float
-    shapes.append((shape_name, dimensions))
-
 import math
 
 # Define shape classes
 class Shape():
-    def area(self):
+    def __init__(self):
         pass
 
+# Create shape objects
 class Rectangle(Shape):
     def __init__(self, length, width):
         self.length = length
@@ -40,19 +29,25 @@ class Triangle(Shape):
     def area(self):
         return 0.5 * self.base * self.height
 
-# Create shape objects
-shape_objects = []
-for shape_name, dimensions in shapes:
-    if shape_name == "Rectangle":
-        shape = Rectangle(*dimensions)  # Unpack dimensions as arguments for __init__ method of each class
-    elif shape_name == "Circle":
-        shape = Circle(*dimensions)
-    elif shape_name == "Triangle":
-        shape = Triangle(*dimensions)
-    shape_objects.append(shape)
+#Read data from the text file
+with open(r'C:\Users\shaky\OneDrive - Texas A&M University\Documents\GitHub\Shakya-online-GEOG676-spring2025\Lab_3\shape.txt', 'r') as file:
+    lines = file.readlines()
 
-# Print shape areas
-for shape in shape_objects:
-    print(f"{shape.__class__.__name__} Area: {shape.area()}")
+#Parse data for iteration and print area
+for line in lines:
+    components = line.split(',')
+    shape=components[0]
+
+    if shape == "Rectangle":
+        rect = Rectangle(int(components[1]), int(components[2]))
+        print('Area of Rectangle is:', rect.area())
+    elif shape == "Circle":
+        cir = Circle(int(components[1]))
+        print('Area of Circle is:', cir.area())
+    elif shape == "Triangle":
+        tri = Triangle(int(components[1]), int(components[2]))
+        print('Area of Triangle is:', tri.area())
+    else:
+        pass
 
  
