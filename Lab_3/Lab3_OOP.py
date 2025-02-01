@@ -32,6 +32,7 @@ class Triangle(Shape):
 #Read data from the text file
 with open(r'C:\Users\shaky\OneDrive - Texas A&M University\Documents\GitHub\Shakya-online-GEOG676-spring2025\Lab_3\shape.txt', 'r') as file:
     lines = file.readlines()
+    file.close()
 
 #Parse data for iteration and print area
 for line in lines:
