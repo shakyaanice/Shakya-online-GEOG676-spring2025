@@ -17,7 +17,7 @@ class Toolbox(object):
 class GraduatedColorRenderer(object):
     def __init__(self):
         """Define the tool (tool name is the name of the class)."""
-        self.label = "graduatedcolor"
+        self.label = "Graduated color"
         self.description = "creates a graduated colored map based on a specific attribute of a layer"
         self.canRunInBackground = False
         self.category = "MapTools"
