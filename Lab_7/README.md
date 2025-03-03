@@ -10,4 +10,4 @@ Band3 = Green
 Band4 = Red
 Band5 = Near Infrared (NIR)
 
-I used SRTM data for Grand Canyyon, Arizona, USA.
+I used SRTM data of Grand Canyyon, Arizona, USA for hillshade and slope analysis.
